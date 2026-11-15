@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="David Daniel is a Computer Science student at Miva Open University, a Python backend developer and an aspiring AI and ML engineer.">
+  <title>Home | David Daniel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+<script>var s;try{s=localStorage.getItem("dd-theme")}catch(e){}document.documentElement.dataset.theme=s==="light"||s==="dark"?s:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="header-brand">
+      <p class="page-name">Home</p>
+      <p class="page-subtitle">David Daniel · Backend Developer</p>
+    </div>
+    <nav id="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html" aria-current="page" aria-label="Home"><i data-i="home"></i><span>Home</span></a></li>
+      <li><a href="about.html" aria-label="About"><i data-i="user"></i><span>About</span></a></li>
+      <li><a href="projects.html" aria-label="Projects"><i data-i="folder"></i><span>Projects</span></a></li>
+      <li><a href="planner.html" aria-label="Planner"><i data-i="cal"></i><span>Planner</span></a></li>
+      <li><a href="contact.html" aria-label="Contact"><i data-i="mail"></i><span>Contact</span></a></li>
+    </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="theme" role="group" aria-label="Color theme">
+        <button type="button" data-theme-choice="system" aria-label="Use system theme" aria-pressed="true"><i data-i="display"></i></button>
+        <button type="button" data-theme-choice="light" aria-label="Use light theme" aria-pressed="false"><i data-i="sun"></i></button>
+        <button type="button" data-theme-choice="dark" aria-label="Use dark theme" aria-pressed="false"><i data-i="moon"></i></button>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><i data-i="menu"></i></button>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div>
+    <p class="badge">Miva Open University, 100 Level</p>
+    <h1>Hi, I'm David Daniel</h1>
+    <h2 class="role"><span id="role">Backend Developer</span><span class="caret"></span></h2>
+    <p><strong>Welcome to my portfolio.</strong> I'm a Computer Science student and self-taught Python backend developer, moving into artificial intelligence and machine learning. This is where I share what I'm learning, what I'm building and how to reach me.</p>
+    <p class="meta">
+      <span><i data-i="pin"></i>Rivers State, Nigeria</span>
+      <span><i data-i="cap"></i>BSc Computer Science, 2026–2029</span>
+    </p>
+    <p class="btns">
+      <a class="btn" href="projects.html">View Projects</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/thatsdrey/" target="_blank" rel="noopener">View LinkedIn</a>
+    </p>
+    <hr>
+    <div class="follow"><strong>Follow me:</strong><ul data-socials></ul></div>
+  </div>
+  <figure class="photo"><img src="images/david-portrait.jpg" alt="Portrait of David Daniel wearing glasses"></figure>
+</section>
+<section aria-labelledby="bio">
+  <h2 id="bio">A short bio</h2>
+  <p class="lead">I started my degree at Miva Open University in 2026 and have been teaching myself backend development in Python alongside it. I enjoy turning ideas into working software, and my long-term goal is to build large language models as an AI and ML engineer.</p>
+  <div class="grid" style="margin-top:22px">
+    <article class="card"><h3>Studying</h3><p>BSc Computer Science at Miva Open University.</p></article>
+    <article class="card"><h3>Building</h3><p>Python backend projects, such as Glimpse, my task manager.</p></article>
+    <article class="card"><h3>Learning next</h3><p>AWS cloud computing, then AI and machine learning.</p></article>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <ul data-socials></ul>
+    <p>&copy; <span data-year>2026</span> David Daniel. BSc Computer Science, Miva Open University.</p>
+  </div>
+</footer>
+</body>
+</html>

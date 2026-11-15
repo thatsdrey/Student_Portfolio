@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Send David Daniel a message.">
+  <title>Contact | David Daniel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+<script>var s;try{s=localStorage.getItem("dd-theme")}catch(e){}document.documentElement.dataset.theme=s==="light"||s==="dark"?s:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="header-brand">
+      <p class="page-name">Contact</p>
+      <p class="page-subtitle">David Daniel · Backend Developer</p>
+    </div>
+    <nav id="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html" aria-label="Home"><i data-i="home"></i><span>Home</span></a></li>
+      <li><a href="about.html" aria-label="About"><i data-i="user"></i><span>About</span></a></li>
+      <li><a href="projects.html" aria-label="Projects"><i data-i="folder"></i><span>Projects</span></a></li>
+      <li><a href="planner.html" aria-label="Planner"><i data-i="cal"></i><span>Planner</span></a></li>
+      <li><a href="contact.html" aria-current="page" aria-label="Contact"><i data-i="mail"></i><span>Contact</span></a></li>
+    </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="theme" role="group" aria-label="Color theme">
+        <button type="button" data-theme-choice="system" aria-label="Use system theme" aria-pressed="true"><i data-i="display"></i></button>
+        <button type="button" data-theme-choice="light" aria-label="Use light theme" aria-pressed="false"><i data-i="sun"></i></button>
+        <button type="button" data-theme-choice="dark" aria-label="Use dark theme" aria-pressed="false"><i data-i="moon"></i></button>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><i data-i="menu"></i></button>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+<div class="contact-shell">
+<h1>Contact me</h1>
+<p class="lead">Have a question or an opportunity? Fill in the form and I'll get back to you.</p>
+<section class="contact">
+  <form id="contact-form" class="card" novalidate>
+    <label for="name">Name<input id="name" name="name" autocomplete="name"><span class="err" id="e-name"></span></label>
+    <label for="email">Email address<input id="email" name="email" type="email" autocomplete="email"><span class="err" id="e-email"></span></label>
+    <div class="phone-field">
+      <div class="phone-inputs">
+        <label for="country-code">Country code
+          <select id="country-code" name="country-code" autocomplete="tel-country-code">
+            <option value="+234" selected>Nigeria (+234)</option>
+            <option value="+233">Ghana (+233)</option>
+            <option value="+254">Kenya (+254)</option>
+            <option value="+27">South Africa (+27)</option>
+            <option value="+44">United Kingdom (+44)</option>
+            <option value="+1">United States / Canada (+1)</option>
+            <option value="+91">India (+91)</option>
+            <option value="+61">Australia (+61)</option>
+            <option value="+971">United Arab Emirates (+971)</option>
+            <option value="+49">Germany (+49)</option>
+            <option value="+33">France (+33)</option>
+            <option value="+353">Ireland (+353)</option>
+            <option value="+64">New Zealand (+64)</option>
+          </select>
+        </label>
+        <label for="phone">Phone number
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="803 123 4567" aria-describedby="phone-hint e-phone">
+        </label>
+      </div>
+      <span class="mut phone-hint" id="phone-hint">Enter the number without its country code; for Nigeria, leave off the leading 0.</span>
+      <span class="err" id="e-phone"></span>
+    </div>
+    <label for="message">Message<textarea id="message" name="message" rows="5"></textarea><span class="err" id="e-message"></span></label>
+    <button class="btn" type="submit">Send message</button>
+    <p class="mut" style="margin-top:12px;font-size:.9rem">Sending opens your email app with your message addressed to theerealdaniel@gmail.com.</p>
+    <p class="ok" id="form-status" role="status" hidden></p>
+  </form>
+  <aside class="card">
+    <h2>Find me online</h2>
+    <p>Rivers State, Nigeria</p>
+    <ul data-socials></ul>
+  </aside>
+</section>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <ul data-socials></ul>
+    <p>&copy; <span data-year>2026</span> David Daniel. BSc Computer Science, Miva Open University.</p>
+  </div>
+</footer>
+</body>
+</html>

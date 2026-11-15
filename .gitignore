@@ -1,0 +1,15 @@
+# Operating system junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+
+# Temp files, zips and Python cache
+*.log
+*.tmp
+*.zip
+__pycache__/
+*.pyc

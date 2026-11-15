@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Education, career goals, technical skills and interests of David Daniel.">
+  <title>About | David Daniel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+<script>var s;try{s=localStorage.getItem("dd-theme")}catch(e){}document.documentElement.dataset.theme=s==="light"||s==="dark"?s:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="header-brand">
+      <p class="page-name">About</p>
+      <p class="page-subtitle">David Daniel · Backend Developer</p>
+    </div>
+    <nav id="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html" aria-label="Home"><i data-i="home"></i><span>Home</span></a></li>
+      <li><a href="about.html" aria-current="page" aria-label="About"><i data-i="user"></i><span>About</span></a></li>
+      <li><a href="projects.html" aria-label="Projects"><i data-i="folder"></i><span>Projects</span></a></li>
+      <li><a href="planner.html" aria-label="Planner"><i data-i="cal"></i><span>Planner</span></a></li>
+      <li><a href="contact.html" aria-label="Contact"><i data-i="mail"></i><span>Contact</span></a></li>
+    </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="theme" role="group" aria-label="Color theme">
+        <button type="button" data-theme-choice="system" aria-label="Use system theme" aria-pressed="true"><i data-i="display"></i></button>
+        <button type="button" data-theme-choice="light" aria-label="Use light theme" aria-pressed="false"><i data-i="sun"></i></button>
+        <button type="button" data-theme-choice="dark" aria-label="Use dark theme" aria-pressed="false"><i data-i="moon"></i></button>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><i data-i="menu"></i></button>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+<h1>About me</h1>
+<p class="lead">I'm a self-taught backend developer and a first-year Computer Science student. I learn by building, and I'm working towards a career in AI and machine learning.</p>
+
+<section aria-labelledby="edu">
+  <h2 id="edu">Educational background</h2>
+  <ol class="timeline">
+    <li><strong>Miva Open University</strong><span>BSc Computer Science, 2026–2029</span>Currently a 100 Level student.</li>
+    <li><strong>freeCodeCamp</strong><span>Backend Engineering, Sep 2025 – Sep 2027 (ongoing)</span>Self-paced study in PostgreSQL and API development.</li>
+    <li><strong>God's Wisdom School</strong><span>Sep 2019 – Jul 2024</span>Served as Deputy Senior Prefect, coordinating student activities and helping maintain school standards.</li>
+  </ol>
+</section>
+
+<section aria-labelledby="goal">
+  <h2 id="goal">Career aspirations</h2>
+  <p class="lead">I want to become an AI and ML engineer who builds large language models. My plan is to master Python and backend fundamentals, learn cloud computing on AWS, then go deep into machine learning.</p>
+</section>
+
+<section aria-labelledby="skills">
+  <h2 id="skills">Technical skills</h2>
+  <table>
+    <caption class="mut" style="text-align:left;margin-bottom:8px">Skills and my current level in each</caption>
+    <thead><tr><th scope="col">Skill</th><th scope="col">Level</th><th scope="col">What I use it for</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Python</th><td>Intermediate</td><td>Scripts, data structures and backend logic</td></tr>
+      <tr><th scope="row">Backend development</th><td>Intermediate</td><td>APIs, databases and application structure</td></tr>
+      <tr><th scope="row">AWS cloud computing</th><td>Foundational</td><td>Learning to deploy and host applications</td></tr>
+      <tr><th scope="row">AI and machine learning</th><td>Currently learning</td><td>My next big step</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="two" aria-label="Interests and video">
+  <div>
+    <h2>Hobbies and interests</h2>
+    <ul class="list">
+      <li>Self-learning</li>
+      <li>Technology</li>
+      <li>Coding</li>
+      <li>Anything that has me working with a computer</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Meet me</h2>
+    <video controls preload="metadata" poster="images/david.jpg">
+      <source src="media/intro.mp4" type="video/mp4">
+      <p>Your browser can't play this video. My intro video is coming soon.</p>
+    </video>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <ul data-socials></ul>
+    <p>&copy; <span data-year>2026</span> David Daniel. BSc Computer Science, Miva Open University.</p>
+  </div>
+</footer>
+</body>
+</html>

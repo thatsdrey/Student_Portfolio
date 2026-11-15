@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projects by David Daniel, including the Glimpse Python task manager.">
+  <title>Projects | David Daniel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+<script>var s;try{s=localStorage.getItem("dd-theme")}catch(e){}document.documentElement.dataset.theme=s==="light"||s==="dark"?s:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="header-brand">
+      <p class="page-name">Projects</p>
+      <p class="page-subtitle">David Daniel · Backend Developer</p>
+    </div>
+    <nav id="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html" aria-label="Home"><i data-i="home"></i><span>Home</span></a></li>
+      <li><a href="about.html" aria-label="About"><i data-i="user"></i><span>About</span></a></li>
+      <li><a href="projects.html" aria-current="page" aria-label="Projects"><i data-i="folder"></i><span>Projects</span></a></li>
+      <li><a href="planner.html" aria-label="Planner"><i data-i="cal"></i><span>Planner</span></a></li>
+      <li><a href="contact.html" aria-label="Contact"><i data-i="mail"></i><span>Contact</span></a></li>
+    </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="theme" role="group" aria-label="Color theme">
+        <button type="button" data-theme-choice="system" aria-label="Use system theme" aria-pressed="true"><i data-i="display"></i></button>
+        <button type="button" data-theme-choice="light" aria-label="Use light theme" aria-pressed="false"><i data-i="sun"></i></button>
+        <button type="button" data-theme-choice="dark" aria-label="Use dark theme" aria-pressed="false"><i data-i="moon"></i></button>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><i data-i="menu"></i></button>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+<h1>Projects</h1>
+<p class="lead">A mix of what I've built and what I'm working towards. Each card links to my GitHub.</p>
+<section class="grid" aria-label="Project list">
+    <article class="card proj">
+      <img src="images/glimpse.svg" alt="Glimpse project preview">
+      <h3>Glimpse</h3>
+      <p class="status">Completed, on GitHub</p>
+      <p>A Python backend task manager. It generates task IDs automatically and stores tasks in dictionaries for quick lookup, update and removal.</p>
+      <ul class="tags"><li>Python</li><li>Dictionaries</li><li>Backend</li></ul>
+      <div class="links"><a href="https://github.com/thatsdrey/Glimpse" target="_blank" rel="noopener">View Glimpse on GitHub</a></div>
+    </article>
+    <article class="card proj">
+      <img src="images/cloud-notes.svg" alt="Cloud Notes API project preview">
+      <h3>Cloud Notes API</h3>
+      <p class="status">Planned project</p>
+      <p>A notes API built in Python and deployed on AWS. It will help me practise REST design, databases and cloud hosting.</p>
+      <ul class="tags"><li>Python</li><li>AWS</li><li>REST API</li></ul>
+      <div class="links"><a href="https://github.com/thatsdrey" target="_blank" rel="noopener">See my GitHub</a></div>
+    </article>
+    <article class="card proj">
+      <img src="images/study-buddy.svg" alt="Study Buddy ML project preview">
+      <h3>Study Buddy ML</h3>
+      <p class="status">Planned project</p>
+      <p>My first machine learning project. It will predict which study habits lead to better results, using a small dataset I collect myself.</p>
+      <ul class="tags"><li>Python</li><li>Machine learning</li><li>Data</li></ul>
+      <div class="links"><a href="https://github.com/thatsdrey" target="_blank" rel="noopener">See my GitHub</a></div>
+    </article>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <ul data-socials></ul>
+    <p>&copy; <span data-year>2026</span> David Daniel. BSc Computer Science, Miva Open University.</p>
+  </div>
+</footer>
+</body>
+</html>

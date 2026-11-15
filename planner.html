@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive academic planner to add, edit, complete and delete tasks.">
+  <title>Academic Planner | David Daniel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+<script>var s;try{s=localStorage.getItem("dd-theme")}catch(e){}document.documentElement.dataset.theme=s==="light"||s==="dark"?s:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="header-brand">
+      <p class="page-name">Planner</p>
+      <p class="page-subtitle">David Daniel · Backend Developer</p>
+    </div>
+    <nav id="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html" aria-label="Home"><i data-i="home"></i><span>Home</span></a></li>
+      <li><a href="about.html" aria-label="About"><i data-i="user"></i><span>About</span></a></li>
+      <li><a href="projects.html" aria-label="Projects"><i data-i="folder"></i><span>Projects</span></a></li>
+      <li><a href="planner.html" aria-current="page" aria-label="Planner"><i data-i="cal"></i><span>Planner</span></a></li>
+      <li><a href="contact.html" aria-label="Contact"><i data-i="mail"></i><span>Contact</span></a></li>
+    </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="theme" role="group" aria-label="Color theme">
+        <button type="button" data-theme-choice="system" aria-label="Use system theme" aria-pressed="true"><i data-i="display"></i></button>
+        <button type="button" data-theme-choice="light" aria-label="Use light theme" aria-pressed="false"><i data-i="sun"></i></button>
+        <button type="button" data-theme-choice="dark" aria-label="Use dark theme" aria-pressed="false"><i data-i="moon"></i></button>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><i data-i="menu"></i></button>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+<h1>Academic planner</h1>
+<p class="lead">Add tasks with a due date and time, tick them off when they're done, edit the details or delete them. Your tasks are saved in this browser.</p>
+<div class="planner">
+  <form id="task-form" class="card">
+    <h2 id="form-title">Add a task</h2>
+    <label for="t-title">Task name<input id="t-title" required maxlength="80"></label>
+    <label for="t-desc">Description<textarea id="t-desc" rows="3" maxlength="300"></textarea></label>
+    <div class="row">
+      <label for="t-date">Due date<input id="t-date" type="date"></label>
+      <label for="t-time">Time<input id="t-time" type="time"></label>
+    </div>
+    <p class="btns"><button class="btn" id="t-save" type="submit">Add task</button><button class="btn ghost" id="t-cancel" type="button" hidden>Cancel</button></p>
+  </form>
+  <section aria-label="Task list" style="margin-top:0">
+    <p id="count" aria-live="polite"></p>
+    <ul id="task-list"></ul>
+  </section>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <ul data-socials></ul>
+    <p>&copy; <span data-year>2026</span> David Daniel. BSc Computer Science, Miva Open University.</p>
+  </div>
+</footer>
+</body>
+</html>
